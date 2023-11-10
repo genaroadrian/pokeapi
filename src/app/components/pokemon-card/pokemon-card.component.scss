@@ -1,0 +1,210 @@
+$bug: #26de81;
+$dragon: #ffeaa7;
+$electric: #fed330;
+$fairy: #ff0069;
+$fighting: #30336b;
+$fire: #f0932b;
+$flying: #81ecec;
+$grass: #00b894;
+$ground: #efb549;
+$ghost: #a55eea;
+$ice: #74b9ff;
+$normal: #95afc0;
+$poison: #6c5ce7;
+$psychic: #a29bfe;
+$rock: #2d3436;
+$water: #0190ff;
+$card-background-type: circle at 50% 0%;
+$card-background-last: rgb(255, 255, 255) 90%;
+.img-container {
+  overflow: hidden;
+}
+
+img {
+  transition: transform 0.3s;
+}
+
+.card.bug {
+  background: radial-gradient(
+    $card-background-type,
+    $bug 36%,
+    $card-background-last
+  );
+}
+
+.card.dragon {
+  background: radial-gradient(
+    $card-background-type,
+    $dragon 36%,
+    $card-background-last
+  );
+}
+
+.card.electric {
+  background: radial-gradient(
+    $card-background-type,
+    $electric 36%,
+    $card-background-last
+  );
+}
+
+.card.fairy {
+  background: radial-gradient(
+    $card-background-type,
+    $fairy 36%,
+    $card-background-last
+  );
+}
+
+.card.fighting {
+  background: radial-gradient(
+    $card-background-type,
+    $fighting 36%,
+    $card-background-last
+  );
+}
+
+.card.fire {
+  background: radial-gradient(
+    $card-background-type,
+    $fire 36%,
+    $card-background-last
+  );
+}
+
+.card.flying {
+  background: radial-gradient(
+    $card-background-type,
+    $flying 36%,
+    $card-background-last
+  );
+}
+
+.card.grass {
+  background: radial-gradient(
+    $card-background-type,
+    $grass 36%,
+    $card-background-last
+  );
+}
+
+.card.ground {
+  background: radial-gradient(
+    $card-background-type,
+    $ground 36%,
+    $card-background-last
+  );
+}
+
+.card.ghost {
+  background: radial-gradient(
+    $card-background-type,
+    $ghost 36%,
+    $card-background-last
+  );
+}
+
+.card.ice {
+  background: radial-gradient(
+    $card-background-type,
+    $ice 36%,
+    $card-background-last
+  );
+}
+
+.card.normal {
+  background: radial-gradient(
+    $card-background-type,
+    $normal 36%,
+    $card-background-last
+  );
+}
+
+.card.poison {
+  background: radial-gradient(
+    $card-background-type,
+    $poison 36%,
+    $card-background-last
+  );
+}
+
+.card.psychic {
+  background: radial-gradient(
+    $card-background-type,
+    $psychic 36%,
+    $card-background-last
+  );
+}
+
+.card.rock {
+  background: radial-gradient(
+    $card-background-type,
+    $rock 36%,
+    $card-background-last
+  );
+}
+
+.card.water {
+  background: radial-gradient(
+    $card-background-type,
+    $water 36%,
+    $card-background-last
+  );
+}
+
+.pokemon-type {
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pokemon-type.bug {
+  background-color: $bug;
+}
+.pokemon-type.dragon {
+  background-color: $dragon;
+}
+.pokemon-type.electric {
+  background-color: $electric;
+}
+.pokemon-type.fairy {
+  background-color: $fairy;
+}
+.pokemon-type.fighting {
+  background-color: $fighting;
+}
+.pokemon-type.fire {
+  background-color: $fire;
+}
+.pokemon-type.flying {
+  background-color: $flying;
+}
+.pokemon-type.grass {
+  background-color: $grass;
+}
+.pokemon-type.ground {
+  background-color: $ground;
+}
+.pokemon-type.ghost {
+  background-color: $ghost;
+}
+.pokemon-type.ice {
+  background-color: $ice;
+}
+.pokemon-type.normal {
+  background-color: $normal;
+}
+.pokemon-type.poison {
+  background-color: $poison;
+}
+.pokemon-type.psychic {
+  background-color: $psychic;
+}
+.pokemon-type.rock {
+  background-color: $rock;
+}
+.pokemon-type.water {
+  background-color: $water;
+}

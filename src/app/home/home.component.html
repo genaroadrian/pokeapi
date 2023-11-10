@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Todos los Pokemones!</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    @for (pokemon of pokemons; track pokemon.name) {
+    <div class="col-6 col-md-3 p-1">
+      <app-pokemon-card [name]="pokemon.name"></app-pokemon-card>
+    </div>
+    }
+  </div>
+  <div class="row pt-3">
+    <div class="col-md-12 d-flex justify-content-end">
+      <app-pagination
+        [pagination]="pagination"
+        [$params]="$params"
+      ></app-pagination>
+    </div>
+  </div>
+</div>

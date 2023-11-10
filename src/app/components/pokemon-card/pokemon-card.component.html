@@ -1,0 +1,53 @@
+<div [class]="'card ' + pokemon.mainType">
+  <div
+    class="img-container"
+    style="z-index: 1"
+    [@zoom]="zoomState"
+    (mouseenter)="toggleZoom()"
+    (mouseleave)="toggleZoom()"
+  >
+    <img class="card-img-top" [src]="pokemon.avatar" alt="Card image cap" />
+  </div>
+  <div class="card-img-overlay d-flex justify-content-between">
+    <span class="card-text fw-bold text-white">#{{ pokemon.id }}</span>
+  </div>
+  <div class="card-body">
+    <div class="d-flex justify-content-center">
+      <div>
+        <h5 class="card-title text-capitalize">{{ pokemon.name }}</h5>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      @for (_type of pokemon.types; track name) {
+      <span [class]="'mx-auto pokemon-type ' + _type.type.name">{{
+        _type.type.name
+      }}</span>
+      }
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="row">
+      <div class="col-4 text-center">
+        <p class="mb-0 fw-bold">{{ pokemon.attack }}</p>
+        <p>
+          <span class="d-none d-md-block">Attack</span>
+          <span class="d-block d-sm-none">ATK</span>
+        </p>
+      </div>
+      <div class="col-4 text-center">
+        <p class="mb-0 fw-bold">{{ pokemon.defense }}</p>
+        <p>
+          <span class="d-none d-md-block">Defense</span>
+          <span class="d-block d-sm-none">DEF</span>
+        </p>
+      </div>
+      <div class="col-4 text-center">
+        <p class="mb-0 fw-bold">{{ pokemon.speed }}</p>
+        <p>
+          <span class="d-none d-md-block">Speed</span>
+          <span class="d-block d-sm-none">SPD</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
